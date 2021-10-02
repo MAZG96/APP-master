@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "740718681609",
+    "project_id": "test-83df4",
+    "storage_bucket": "test-83df4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740718681609:android:7fca18815de2433cdc62d8",
+        "android_client_info": {
+          "package_name": "uca.es.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740718681609-989fdd82t1ceunk8b7ao9m28d2rnpb2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTbrw2hXb_z-Oh1mugdBpLww9d4so9DxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740718681609-989fdd82t1ceunk8b7ao9m28d2rnpb2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

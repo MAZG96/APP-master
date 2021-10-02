@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="uca.es.test">
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- MAKE ALARMS RESTART ON REBOOT -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icons8_llamada_de_conferencia_100"
+        android:label="Gestión Clínica Osteopatía"
+        android:roundIcon="@drawable/icons8_llamada_de_conferencia_100"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".TratamientoActivity" />
+        <activity android:name=".DetallesInformeActivity" />
+        <activity android:name=".InformeActivity" />
+        <activity android:name=".NuevoPacienteActivity" />
+        <activity android:name=".PacienteEditar2Activity" />
+        <activity android:name=".CraneoActivity" />
+        <activity android:name=".RespiratorioActivity" />
+        <activity android:name=".VisceralActivity" />
+        <activity android:name=".Estructura2Activity" />
+        <activity android:name=".RespuestaMultipleActivity" />
+        <activity android:name=".EstructuraActivity" />
+        <activity android:name=".ConfirmarCitaActivity" />
+        <activity android:name=".NuevaCita2Activity" />
+        <activity android:name=".NuevaCitaActivity" />
+        <activity android:name=".DetallesCitaActivity" />
+        <activity android:name=".Paciente_EditarActivity" />
+        <activity android:name=".CitasActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".PersonalActivity" />
+        <activity android:name=".PacienteActivity" />
+        <activity android:name=".RespuestaActivity" />
+        <activity android:name=".AnamnesisActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true" />
+
+        <service
+            android:name=".NotificationService"
+            android:enabled="true" /> <!-- Servicio para las notificaciones -->
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+    </application>
+
+</manifest>
